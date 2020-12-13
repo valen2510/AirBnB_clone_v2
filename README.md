@@ -65,6 +65,32 @@ Advanced syntax is implemented for the following commands:
 
     * update - Updates existing attributes an object based on class name and UUID
 
+
+##### Non-Interactive mode
+Users are able to issue a the commands in a non-interactive syntax. For example: 
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+
+```
+
 <br>
 <br>
 <center> <h2>Examples</h2> </center>
