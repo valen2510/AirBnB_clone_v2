@@ -126,7 +126,7 @@ class HBNBCommand(cmd.Cmd):
         new_instance = HBNBCommand.classes[args[0]]()
 
         for pair in args[1:]:
-            attr = pair.split("=")
+            attr = pair.split("=", maxsplit=1)
             key = attr[0]
             value = ""
             if attr[1][0] == '\"':
