@@ -8,11 +8,10 @@ metadata = Base.metadata
 place_amenity = Table(
     'place_amenity', metadata,
     Column(
-        'places_id', String(60), ForeignKey('places.id'),
-        primary_key=True, nullable=False),
+        'places_id', String(60), ForeignKey('places.id'), nullable=False),
     Column(
         'amenity_id', String(60), ForeignKey('amenities.id'),
-        primary_key=True, nullable=False))
+        nullable=False))
 
 
 class Place(BaseModel, Base):
