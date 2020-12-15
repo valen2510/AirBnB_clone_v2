@@ -35,7 +35,7 @@ class DBStorage():
         """Queries for specified classes"""
         object_dictionary = {}
         if cls is None:
-            classes = [City, State, User, Place, Review]
+            classes = [City, State, User, Place, Review, Amenity]
             for clase in classes:
                 for obj in self.__session.query(clase).all():
                     object_dictionary[obj.to_dict()['__class__'] + '.' +
