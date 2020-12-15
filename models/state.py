@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" State Module for HBNB project """
+""" State Module for HBNB project for AirBNB_clone_v2"""
 
 
 from models.base_model import BaseModel, Base
@@ -9,7 +9,7 @@ from models.engine.file_storage import FileStorage
 
 
 class State(BaseModel, Base):
-    """ State class """
+    """ State class definition in the next line"""
     __tablename__ = 'states'
     name = Column(String(128), nullable=False)
     cities = relationship('City', backref='state')
