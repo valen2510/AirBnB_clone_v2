@@ -46,6 +46,7 @@ class Place(BaseModel, Base):
     @property
     def amenities(self):
         """Getter of the amenity attribute"""
+        from models.amenity import Amenity
         from models import storage
         new_list = []
         for key, obj_amenity in storage.all(Amenity).items():
