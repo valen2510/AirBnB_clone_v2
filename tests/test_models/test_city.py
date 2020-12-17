@@ -11,7 +11,7 @@ class test_City(test_basemodel):
     """ Test for class city"""
 
     def __init__(self, *args, **kwargs):
-        """ """
+        """ Init method"""
         super().__init__(*args, **kwargs)
         self.name = "City"
         self.value = City
