@@ -8,7 +8,7 @@ from sqlalchemy.exc import OperationalError
 
 
 class test_City(test_basemodel):
-    """ Un"""
+    """ Test for class city"""
 
     def __init__(self, *args, **kwargs):
         """ """
