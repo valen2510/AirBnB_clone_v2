@@ -8,16 +8,16 @@ from sqlalchemy.exc import OperationalError
 
 
 class test_City(test_basemodel):
-    """ Un"""
+    """ Test for class city"""
 
     def __init__(self, *args, **kwargs):
-        """ """
+        """ Init method"""
         super().__init__(*args, **kwargs)
         self.name = "City"
         self.value = City
 
     def test_creation(self):
-        """ """
+        """ Test Creation """
         state = State(name="California")
         new = self.value(state_id=state.id, name="San_Francisco")
         self.assertEqual(type(new.state_id), str)
