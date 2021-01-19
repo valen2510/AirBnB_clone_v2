@@ -18,6 +18,7 @@ class State(BaseModel, Base):
     def cities(self):
         """Getter attribute cities that returns the list of City instances"""
         from models import storage
+        from models.city import City
         new_list = []
         for key, obj_city in storage.all(City).items():
             if obj_city.state_id == self.id:
